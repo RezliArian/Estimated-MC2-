@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PresetButtonCell" rowHeight="206" id="KGk-i7-Jjw" customClass="PresetButtonCell" customModule="Estimated" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="540" height="206"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="540" height="205.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Unb-2x-GbH">
+                        <rect key="frame" x="16" y="12" width="508" height="177.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2EI-7S-iIh" customClass="ETButton" customModule="Estimated" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="161.5" height="177.5"/>
+                                <state key="normal" title="15 Minutes"/>
+                                <connections>
+                                    <action selector="fiveMinuteButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ejj-nW-KMV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vf-qZ-byd" customClass="ETButton" customModule="Estimated" customModuleProvider="target">
+                                <rect key="frame" x="173.5" y="0.0" width="161" height="177.5"/>
+                                <state key="normal" title="30 Minutes"/>
+                                <connections>
+                                    <action selector="fifteenMinuteButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FO5-ye-HG5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuL-Ts-cxa" customClass="ETButton" customModule="Estimated" customModuleProvider="target">
+                                <rect key="frame" x="346.5" y="0.0" width="161.5" height="177.5"/>
+                                <state key="normal" title="1 Hour"/>
+                                <connections>
+                                    <action selector="thirtyMinuteButtonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="jyQ-OL-xbK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Unb-2x-GbH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="1Ls-OB-ffZ"/>
+                    <constraint firstAttribute="bottom" secondItem="Unb-2x-GbH" secondAttribute="bottom" constant="16" id="BT6-L1-3Ny"/>
+                    <constraint firstItem="Unb-2x-GbH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="OiL-Ro-4jA"/>
+                    <constraint firstAttribute="trailing" secondItem="Unb-2x-GbH" secondAttribute="trailing" constant="16" id="vTt-ab-qey"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="297.10144927536237" y="206.91964285714286"/>
+        </tableViewCell>
+    </objects>
+</document>
